@@ -20,7 +20,7 @@ class SearchStackoverflow:
                 break
         return order
 
-    def superheroes_list(self):
+    def stackoverflow_list(self):
         url = 'https://api.stackexchange.com/2.3/search'
         order = self.electionorder()
         unix_day = 86400
@@ -34,7 +34,7 @@ class SearchStackoverflow:
         return response.json()
 
     def titles_extractor(self):
-        search_result = self.superheroes_list()
+        search_result = self.stackoverflow_list()
         print('Список вопросов из stackoverflow за день:\n')
         for item in search_result['items']:
             print(f'{item["title"]} - дата создания - '

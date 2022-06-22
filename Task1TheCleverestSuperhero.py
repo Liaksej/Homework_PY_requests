@@ -39,5 +39,5 @@ class SuperHeroes:
 
 
 if __name__ == '__main__':
-    search = SuperHeroes('Thor', 'Captain America', 'Iron Man')
+    search = SuperHeroes('Hulk', 'Captain America', 'Thanos')
     print(search.cleverest_super_heroe())
